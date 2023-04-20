@@ -2,7 +2,7 @@
  * @Author: guanyaoming guanyaoming@linklogis.com
  * @Date: 2023-04-19 11:01:08
  * @LastEditors: guanyaoming guanyaoming@linklogis.com
- * @LastEditTime: 2023-04-20 14:53:50
+ * @LastEditTime: 2023-04-20 16:11:47
  * @FilePath: \code\server.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -33,8 +33,8 @@ const menu = {
 };
 
 // 引入验证微信服务器的有效性
-const auth = require("./wechat/auth");
-app.use(auth());
+// const auth = require("./wechat/auth");
+// app.use(auth());
 
 const createMenu = async function () {
   const data = await api.createMenu(menu);
